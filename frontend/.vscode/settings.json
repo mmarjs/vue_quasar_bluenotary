@@ -1,0 +1,9 @@
+{
+  "javascript.preferences.quoteStyle": "auto",
+  "typescript.preferences.quoteStyle": "auto",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": false,
+    "source.fixAll.eslint": false
+  }
+}

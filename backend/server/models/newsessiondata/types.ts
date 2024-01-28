@@ -1,0 +1,43 @@
+import { Document } from 'mongoose'
+
+export interface INEWSESSION extends Document {
+  sessionid: string
+  userId: string
+  sessionCode: string,
+  notaryUserId: string,
+  currentStage: string,
+  originalDocumentId: string,
+  originalDocumentIds: any[],
+  finalDocumentId: string,
+  videoFileDocumentId: string,
+  finalDocumentIdWithDC: string,
+  x509Certificate: string,
+  stagesHistory: any[],
+  multiSignerList: any[],
+  meetingdate: string,
+  meetingdatetimeobj: Date,
+  meetingTimeZone: string,
+  attachCertificate: boolean,
+  paid: boolean,
+  sessionActive: boolean,
+  sessionActiveFrom: any,
+  notorizationType: string,
+  costOfNotarization: any[],
+  finalCostOfNotarization: string,
+  emptyPagesAdded: number,
+  emptyPagesAddedDocIdWise: object,
+  failMessage: string,
+  status: string,
+  stripePaymentData: any,
+  kbaStartedAt: Date,
+  notorizationTiming: string,
+  sessionOpenCallForTaking: boolean,
+  sessionOpenCallForTakingAt: Date,
+  sessionOpenCallForWitness: boolean,
+  sessionOpenCallForWitnessAt: Date,
+  maxWitnessJoined: number,
+  videoSavingProcessingStage: string,
+  videoSavingProcessingError: string,
+  sessionType: string,
+  sessionCustomCharges: any[]
+}
